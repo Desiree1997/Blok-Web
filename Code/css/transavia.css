@@ -1,0 +1,145 @@
+body {
+    font-family: nexa-light, sans-serif;
+    font-size: 1em;
+    background-color: white 2em;
+    background-image: url(../img/Achtergrond.foto.jpg);
+    background-repeat: no-repeat;
+    background-color: #FFCCCC;
+}
+
+ul {
+    list-style-type: none;
+    display: inline;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+h1 {
+    color: #00D66C;
+    font-family: nexa-bold, sans-serif;
+    display: bold;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+h2 {
+    color: #00D66C;
+    text-align: center;
+}
+
+h3 {
+    background-color: #333399;
+    margin: -1em;
+    padding: 1em;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    color: white;
+    text-align: center;
+}
+
+h4 {
+    color: #00D66C;
+    text-align: center;
+    font-size: 2em;
+    margin-top: -5em;
+    margin-bottom: 4em;
+}
+
+article {
+    border: none;
+    border-color: #909090;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    width: 20em;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    margin-top: 1.1em;
+    margin-bottom: 1em;
+}
+
+.home {
+    width: 4%;
+}
+
+.titel {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: #00D66C;
+}
+
+fieldset {
+    border: solid;
+    border-color: #909090;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    width: 16em;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+}
+
+a {
+    color: #00D66C;
+    text-decoration: none;
+}
+
+hover {
+    color: #00D66C;
+}
+
+button {
+    border-radius: 2em;
+    border: none;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    display: inline;
+    background-color: #FF3366;
+    color: white;
+    font-size: 1em;
+    background-color: #333399;
+}
+
+.zoeken {
+    border-radius: 2em;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    display: inline;
+    background-color: #FF3366;
+    color: white;
+    margin-top: 1em;
+    margin-left: 0.8em;
+    font-size: 1em;
+}
+
+#inputzoeken {
+    margin: 0em;
+    margin-bottom: 1em;
+    font-size: .9em;
+    border-radius: 1em;
+}
+
+.inlog {
+    width: 4%;
+}
+
+.form {
+    display: block;
+}
