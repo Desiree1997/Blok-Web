@@ -2,7 +2,8 @@ body {
     font-family: nexa-light, sans-serif;
     font-size: 1em;
     background-color: white 2em;
-    background-image: url(../img/Achtergrond.foto.jpg);
+    background-image: url(../img/Achtergrond.foto.jpg) ;
+    background-position: 0em 7.5em;
     background-repeat: no-repeat;
     background-color: #FFCCCC;
 }
@@ -45,8 +46,8 @@ h4 {
     color: #00D66C;
     text-align: center;
     font-size: 2em;
-    margin-top: -5em;
-    margin-bottom: 4em;
+    margin-top: -6em;
+    margin-bottom: 5em;
 }
 
 article {
