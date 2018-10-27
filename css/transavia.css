@@ -1,0 +1,521 @@
+body {
+    font-family: "Nexa Light", "Nexa Bold", sans-serif;
+    font-size: 1em;
+    background-color: white 2em;
+    background-color: #F3E5D8;
+    margin: 0;
+}
+
+#aanmelden {
+    background-color: #00d66c;
+}
+
+#waterverf {
+    background-image: url(../img/waterverf.achtergrond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#ruimte {
+    padding: 2em;
+}
+
+header {
+    background-color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: .7em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    text-align: right;
+    padding: 1em;
+}
+
+li:first-child {
+    margin-right: auto;
+}
+
+body header nav ul li img {
+    width: 3em;
+    padding: 0;
+}
+
+header img {
+    width: 20em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.transaviaLogo {
+    width: 13em;
+    height: 2.4em;
+}
+
+.favoriet {
+    width: 2.7em;
+}
+
+.download {
+    width: 3.2em;
+}
+
+.account {
+    width: 2.2em;
+    margin-right: .5em;
+}
+
+section:first-of-type {
+    border-radius: 1em;
+}
+
+a {
+    color: #00D66C;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+}
+
+section article a {
+    padding-top: 1em;
+}
+
+a:hover {
+    color: #333399;
+}
+
+h1 {
+    color: #00D66C;
+    text-align: center;
+    font-family: "Nexa Bold";
+}
+
+h2 {
+    font-family: "Nexa Bold";
+    color: #333399;
+    text-align: center;
+    font-size: 2em;
+}
+
+h3 {
+    font-family: "Nexa Bold";
+    text-decoration: none;
+    color: #00D66C;
+    font-size: 1.5em;
+    margin-top: .4em;
+    margin-bottom: 0;
+}
+
+article {
+    border: none;
+    border-color: #909090;
+    border-radius: 1em;
+    padding: 1em;
+    width: 20em;
+    box-sizing: border-box;
+    margin-bottom: 1.5em;
+}
+
+article.first {
+    background: white;
+    width: 30em;
+}
+
+article img {
+    width: 2em;
+    height: 1.8em;
+    padding-left: 1.1em;
+    position: relative;
+    right: -10em;
+}
+
+section article img:first-child {
+    width: 100%;
+    border-radius: 1em;
+    height: 13em;
+    padding-left: 0;
+    right: 0;
+}
+
+.achtergrond {
+    background-image: url(../img/Achtergrond.foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+}
+
+legend {
+    font-family: "Nexa Bold";
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main div section form a {
+    color: #333399;
+    display: block;
+    text-align: right;
+    padding-right: 1.5em;
+    padding-top: .2em;
+    padding-bottom: 1em;
+}
+
+main div section form a:hover {
+    color: #FF3366;
+}
+
+body main section a {
+    text-align: center;
+    display: inline-block;
+}
+
+fieldset {
+    border: none;
+    background: white;
+    border-radius: 1em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    color: #00d66c;
+}
+
+#aanmelden form {
+    padding-bottom: 1em;
+}
+
+button {
+    border-radius: 2em;
+    border: none;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    background-color: #FF3366;
+    color: white;
+    font-size: 1em;
+    background-color: #333399;
+    margin: auto;
+}
+
+[type=submit] {
+    border-radius: 2em;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    display: block;
+    background-color: #FF3366;
+    color: white;
+    margin: 1em auto;
+    font-size: 1em;
+    font-family: "Nexa Light";
+}
+
+[name=zoeken] {
+    margin: 0em .4em 0em 0em;
+    display: inline;
+}
+
+[type=search] {
+    margin: 0em;
+    margin-bottom: 1em;
+    font-size: .9em;
+    border-radius: 1em;
+    padding-left: 1em;
+    width: 100%;
+}
+
+[type=text],
+[type=email] {
+    display: block;
+    border-radius: 1em;
+    background: white;
+    width: 100%;
+    margin-top: .2em;
+}
+
+[type=radio] {
+    visibility: hidden;
+    text-align: center;
+    margin-left: -1.5em;
+}
+
+[name=laatste] {
+    background-color: #00c66d;
+    color: #ffffff;
+    border-radius: 1em;
+    padding: .6em;
+    margin: .1em;
+    width: 5.8em;
+    text-align: center;
+    /* display: inline; */
+}
+
+[name=laatste]:hover {
+    background-color: #333399;
+}
+
+.activeRadio {
+    background-color: #333399;
+}
+
+section:last-child {
+    background-color: #ffffff;
+}
+
+footer {
+    background-color: #f6f6f6;
+    padding: 1em;
+    padding-right: 3em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#balk {
+    position: relative;
+    bottom: -6em;
+}
+
+.openKlappen {
+    transition: 0.5s;
+    overflow: hidden;
+    height: 0;
+}
+
+.active {
+    height: 16em;
+}
+
+.dun {
+    transform: rotateZ(-270deg);
+    color: black;
+    position: relative;
+    top: 4em;
+    right: 5em;
+    font-size: 5em;
+}
+
+.beat {
+    animation: beat 1s;
+    /*animation-iteration-count: 2;*/
+}
+
+@keyframes beat {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Dit is de animatie op het progress balkje. DevTips op Youtube heeft mij hierbij geholpen met het filmpje: Animating the Moments — Using Animation in UX CSS Animations Series Part 3*/
+
+.progress-bar {
+    width: 100%;
+    height: 1em;
+    box-shadow: 0px 20px 25px -10px rgba(0, 0, 0, 0.3);
+}
+
+.progress.animated {
+    height: 100%;
+    width: 100%;
+    background-color: #333399;
+    animation: progress linear 6s;
+}
+
+@keyframes progress {
+    0%,
+    30% {
+        width: 0%;
+    }
+    30% {
+        width: 20%;
+    }
+    40% {
+        width: 60%;
+    }
+    70%,
+    90% {
+        width: 80%;
+    }
+    90%,
+    100% {
+        width: 100%;
+    }
+}
+
+.rechts,
+.links {
+    height: 4em;
+    overflow: hidden;
+    position: relative;
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+.rechts p,
+.links p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 2em;
+    text-align: left;
+    font-size: 2em;
+
+    /* Apply animation to this element */
+    animation: rechts 8s linear;
+    animation: links 8s linear;
+}
+
+/* Move it (define the animation) */
+
+@keyframes links {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes rechts {
+    0% {
+        transform: translateX(200%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/*minor breakpoint*/
+
+@media (max-width: 40em) {
+    section:nth-of-type(1),
+    section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    h2 {
+        grid-column: span 1;
+    }
+    article {
+        justify-self: center;
+    }
+    .transaviaLogo {
+        width: 12em;
+        margin: 0;
+        height: 2.2em;
+    }
+    body header nav ul li img {
+        width: 2em;
+        padding: 0;
+    }
+    li {
+        padding: .5em;
+    }
+    .favoriet {
+        width: 2.55em;
+    }
+    .download {
+        width: 3.05em;
+    }
+}
+
+/*major breakpoint 1*/
+
+@media (min-width: 40em) {
+    section:nth-of-type(1),
+    section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    section article:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    div section:nth-of-type(1) {
+        width: 50%;
+        max-width: 40em;
+        display: block;
+    }
+    h2 {
+        grid-column: span 2;
+    }
+    article {
+        justify-self: center;
+    }
+    h1 {
+        font-size: 1.75em;
+    }
+    legend,
+    label {
+        font-size: 1.1em;
+    }
+    a,
+    [type=submit] {
+        font-size: 1.05em;
+    }
+    .zoeken {
+        margin: 0em .2em 0em 0em;
+    }
+    [type=search] {
+        width: 63%;
+    }
+
+    /*major breakpoint 2*/
+    @media (min-width: 70em) {
+        section:nth-of-type(1),
+        section:nth-of-type(2) {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        section article:first-child {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        h2 {
+            grid-column: span 3;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        legend,
+        label {
+            font-size: 1.2em;
+        }
+        a,
+        [type=submit] {
+            font-size: 1.1em;
+        }
+        .zoeken {
+            margin: 0em .2em 0em 0em;
+        }
+        [type=search] {
+            width: 78%;
+        }
+    }
+
+    section:first-child {
+        border-radius: 1em;
+        background: white;
+        max-width: 17em;
+        margin: auto;
+        padding: 1.5em;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
