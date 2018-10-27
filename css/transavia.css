@@ -420,7 +420,7 @@ footer {
     .transaviaLogo {
         width: 8em;
         margin: 0;
-        height: 2.2em;
+        height: 2em;
     }
     body header nav ul li img {
         width: 2em;
@@ -434,6 +434,9 @@ footer {
     }
     .download {
         width: 3.05em;
+    }
+    .account {
+        width: 2em;
     }
 }
 
