@@ -54,20 +54,20 @@ header img {
     padding-left: 1em;
 }
 
-.transaviaLogo {
+body > header > nav > ul > li:nth-child(1) > a > img, body > footer > img {
     width: 13em;
     height: 2.4em;
 }
 
-.favoriet {
+body > header > nav > ul > li:nth-child(2) > a > img {
     width: 2.7em;
 }
 
-.download {
+body > header > nav > ul > li:nth-child(3) > a > img {
     width: 3.2em;
 }
 
-.account {
+body > header > nav > ul > li:nth-child(4) > a > img {
     width: 2.2em;
     margin-right: .5em;
 }
@@ -161,7 +161,7 @@ legend {
     grid-template-columns: 1fr 1fr;
 }
 
-main div section form a {
+body > main > div > section > form > a {
     color: #333399;
     display: block;
     text-align: right;
@@ -170,7 +170,7 @@ main div section form a {
     padding-bottom: 1em;
 }
 
-main div section form a:hover {
+body > main > div > section > form > a:hover {
     color: #FF3366;
 }
 
@@ -224,7 +224,7 @@ button {
     font-family: "Nexa Light";
 }
 
-[name=zoeken] {
+body > main > div > section > form > div > fieldset:nth-child(1) > label, body > main > div > section > form > div > fieldset:nth-child(1) > input[type="submit"] {
     margin: 0em .4em 0em 0em;
     display: inline;
 }
@@ -417,7 +417,7 @@ footer {
     article {
         justify-self: center;
     }
-    .transaviaLogo {
+    body > header > nav > ul > li:nth-child(1) > a > img, body > footer > img {
         width: 9em;
         margin: 0;
         height: 1.8em;
@@ -430,13 +430,13 @@ footer {
     li {
         padding: .5em;
     }
-    .favoriet {
+    body > header > nav > ul > li:nth-child(2) > a > img {
         width: 2.55em;
     }
-    .download {
+    body > header > nav > ul > li:nth-child(3) > a > img {
         width: 3.05em;
     }
-    .account {
+    body > header > nav > ul > li:nth-child(4) > a > img {
         width: 2em;
     }
 }
@@ -481,6 +481,10 @@ footer {
     [type=search] {
         width: 63%;
     }
+    .active {
+    height: 16em;
+}
+}
 
     /*major breakpoint 2*/
     @media (min-width: 70em) {
