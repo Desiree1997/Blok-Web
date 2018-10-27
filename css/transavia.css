@@ -74,6 +74,7 @@ body > header > nav > ul > li:nth-child(4) > a > img {
 
 section:first-of-type {
     border-radius: 1em;
+
 }
 
 a {
@@ -177,6 +178,10 @@ body > main > div > section > form > a:hover {
 body main section a {
     text-align: center;
     display: inline-block;
+}
+
+body > main > section:nth-child(2) > article:nth-child(3) > a {
+    text-align: left;
 }
 
 fieldset {
@@ -439,6 +444,9 @@ footer {
     body > header > nav > ul > li:nth-child(4) > a > img {
         width: 2em;
     }
+    .active {
+    height: 16em;
+}
 }
 
 /*major breakpoint 1*/
@@ -481,9 +489,6 @@ footer {
     [type=search] {
         width: 63%;
     }
-    .active {
-    height: 16em;
-}
 }
 
     /*major breakpoint 2*/
@@ -521,7 +526,6 @@ footer {
     section:first-child {
         border-radius: 1em;
         background: white;
-        max-width: 17em;
         margin: auto;
         padding: 1.5em;
         display: grid;
