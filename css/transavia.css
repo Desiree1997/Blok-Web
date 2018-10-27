@@ -526,7 +526,6 @@ footer {
     section:first-child {
         border-radius: 1em;
         background: white;
-        margin: auto;
         padding: 1.5em;
         display: grid;
         grid-template-columns: 1fr;
