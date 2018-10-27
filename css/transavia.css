@@ -418,7 +418,7 @@ footer {
         justify-self: center;
     }
     .transaviaLogo {
-        width: 5em;
+        width: 8em;
         margin: 0;
         height: 2.2em;
     }
@@ -430,10 +430,10 @@ footer {
         padding: .5em;
     }
     .favoriet {
-        width: 2em;
+        width: 2.55em;
     }
     .download {
-        width: 2em;
+        width: 3.05em;
     }
 }
 
