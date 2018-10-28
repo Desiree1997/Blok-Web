@@ -182,13 +182,14 @@ body main section a {
 
 body > main > section:nth-child(2) > article:nth-child(3) > a {
     text-align: left;
+    display: block;
 }
 
 fieldset {
     border: none;
     background: white;
     border-radius: 1em;
-    padding: 1em;
+    padding: .1em;
     box-sizing: border-box;
 }
 
@@ -407,6 +408,10 @@ footer {
     }
 }
 
+section:first-child {
+    padding: 2em;
+}
+
 /*minor breakpoint*/
 
 @media (max-width: 40em) {
@@ -446,6 +451,9 @@ footer {
     }
     .active {
     height: 16em;
+}
+    section:first-child {
+        padding: 1em;
 }
 }
 
@@ -526,7 +534,7 @@ footer {
     section:first-child {
         border-radius: 1em;
         background: white;
-        padding: 1.5em;
+        margin: auto;
         display: grid;
         grid-template-columns: 1fr;
     }
