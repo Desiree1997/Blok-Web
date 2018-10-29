@@ -6,6 +6,16 @@ body {
     margin: 0;
 }
 
+
+/* achtergronden pagina's*/
+#achtergrond {
+    background-image: url(../img/Achtergrond.foto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+}
+
 #aanmelden {
     background-color: #00d66c;
 }
@@ -15,8 +25,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 10em;
 }
 
+
+/*header informatie*/
 #ruimte {
     padding: 2em;
 }
@@ -43,18 +56,13 @@ li:first-child {
     margin-right: auto;
 }
 
-body header nav ul li img {
-    width: 3em;
-    padding: 0;
-}
-
 header img {
     width: 20em;
     padding-top: 1em;
     padding-left: 1em;
 }
 
-body > header > nav > ul > li:nth-child(1) > a > img, body > footer > img {
+body > header > nav > ul > li:first-child > a > img, body > footer > img {
     width: 13em;
     height: 2.4em;
 }
@@ -67,31 +75,18 @@ body > header > nav > ul > li:nth-child(3) > a > img {
     width: 3.2em;
 }
 
-body > header > nav > ul > li:nth-child(4) > a > img {
+body > header > nav > ul > li:last-child > a > img {
     width: 2.2em;
     margin-right: .5em;
 }
 
-section:first-of-type {
-    border-radius: 1em;
-
-}
-
-a {
-    color: #00D66C;
-    text-decoration: none;
+body header nav ul li img {
+    width: 3em;
     padding: 0;
-    display: block;
 }
 
-section article a {
-    padding-top: 1em;
-}
 
-a:hover {
-    color: #333399;
-}
-
+/* kopjes */
 h1 {
     color: #00D66C;
     text-align: center;
@@ -114,6 +109,195 @@ h3 {
     margin-bottom: 0;
 }
 
+.dun {
+    transform: rotateZ(-270deg);
+    color: black;
+    position: relative;
+    top: 4em;
+    right: 3.5em;
+    font-size: 3em;
+}
+
+#ruimte > section > form > fieldset > legend {
+    color: #00D66C;
+    text-align: center;
+    font-family: "Nexa Bold";
+    font-size: 2em;
+}
+
+
+/* eerste section */
+section:first-of-type {
+    border-radius: 1em;
+}
+
+section:first-child {
+    padding: 2em;
+}
+
+
+/* form */
+fieldset {
+    border: none;
+    background: white;
+    border-radius: 1em;
+    padding: .1em;
+    box-sizing: border-box;
+}
+
+legend {
+    font-family: "Nexa Bold";
+}
+
+label {
+    display: block;
+    color: #00d66c;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+button {
+    border-radius: 2em;
+    border: none;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    background-color: #FF3366;
+    color: white;
+    font-size: 1em;
+    background-color: #333399;
+    margin: auto;
+}
+
+[type=submit] {
+    border-radius: 2em;
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    display: block;
+    background-color: #FF3366;
+    color: white;
+    margin: 1em auto;
+    font-size: 1em;
+    font-family: "Nexa Light";
+}
+
+body > main > div > section > form > div > fieldset:first-child > label, body > main > div > section > form > div > fieldset:first-child > input[type="submit"] {
+    margin: 0em .4em 0em 0em;
+    display: inline;
+}
+
+[type=search] {
+    margin: 0em;
+    margin-bottom: 1em;
+    font-size: .9em;
+    border-radius: 1em;
+    padding-left: 1em;
+    width: 100%;
+}
+
+[type=text],
+[type=email] {
+    display: block;
+    border-radius: 1em;
+    background: white;
+    width: 90%;
+    margin-top: .2em;
+    font-size: 1em;
+    padding-left: 1em;
+}
+
+[type=radio] {
+    visibility: hidden;
+    text-align: center;
+    margin-left: -1.5em;
+}
+
+[name=laatste] {
+    background-color: #00c66d;
+    color: #ffffff;
+    border-radius: 1em;
+    padding: .6em;
+    margin: .1em;
+    width: 5.8em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[name=laatste]:hover {
+    background-color: #333399;
+}
+
+.activeRadio {
+    background-color: #333399;
+}
+
+.openKlappen {
+    transition: 0.5s;
+    overflow: hidden;
+    height: 0;
+}
+
+.active {
+    height: 14em;
+}
+
+#aanmelden form {
+    padding-bottom: 1em;
+}
+
+#ruimte > section {
+    width: 20em;
+}
+
+
+/* link */
+a {
+    color: #00D66C;
+    text-decoration: none;
+    padding: 0;
+    display: block;
+}
+
+a:hover {
+    color: #333399;
+}
+
+body main section a {
+    text-align: center;
+    display: inline-block;
+}
+
+body > main > div > section > form > a {
+    color: #333399;
+    display: block;
+    text-align: right;
+    padding-right: 1.5em;
+    padding-top: .2em;
+    padding-bottom: 1em;
+}
+
+body > main > div > section > form > a:hover {
+    color: #FF3366;
+}
+
+section article a {
+    padding-top: 1em;
+}
+
+body > main > section:nth-child(2) > article:nth-child(3) > a {
+    text-align: left;
+    display: block; /* voor mobiel */
+}
+
+
+/* articles */
 article {
     border: none;
     border-color: #909090;
@@ -145,175 +329,30 @@ section article img:first-child {
     right: 0;
 }
 
-.achtergrond {
-    background-image: url(../img/Achtergrond.foto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 1em;
-}
 
-legend {
-    font-family: "Nexa Bold";
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-body > main > div > section > form > a {
-    color: #333399;
-    display: block;
-    text-align: right;
-    padding-right: 1.5em;
-    padding-top: .2em;
-    padding-bottom: 1em;
-}
-
-body > main > div > section > form > a:hover {
-    color: #FF3366;
-}
-
-body main section a {
-    text-align: center;
-    display: inline-block;
-}
-
-body > main > section:nth-child(2) > article:nth-child(3) > a {
-    text-align: left;
-    display: block;
-}
-
-fieldset {
-    border: none;
-    background: white;
-    border-radius: 1em;
-    padding: .1em;
-    box-sizing: border-box;
-}
-
-label {
-    display: block;
-    color: #00d66c;
-}
-
-#aanmelden form {
-    padding-bottom: 1em;
-}
-
-button {
-    border-radius: 2em;
-    border: none;
-    padding: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-decoration: none;
-    background-color: #FF3366;
-    color: white;
-    font-size: 1em;
-    background-color: #333399;
-    margin: auto;
-}
-
-[type=submit] {
-    border-radius: 2em;
-    padding: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    text-decoration: none;
-    display: block;
-    background-color: #FF3366;
-    color: white;
-    margin: 1em auto;
-    font-size: 1em;
-    font-family: "Nexa Light";
-}
-
-body > main > div > section > form > div > fieldset:nth-child(1) > label, body > main > div > section > form > div > fieldset:nth-child(1) > input[type="submit"] {
-    margin: 0em .4em 0em 0em;
-    display: inline;
-}
-
-[type=search] {
-    margin: 0em;
-    margin-bottom: 1em;
-    font-size: .9em;
-    border-radius: 1em;
-    padding-left: 1em;
-    width: 100%;
-}
-
-[type=text],
-[type=email] {
-    display: block;
-    border-radius: 1em;
-    background: white;
-    width: 100%;
-    margin-top: .2em;
-}
-
-[type=radio] {
-    visibility: hidden;
-    text-align: center;
-    margin-left: -1.5em;
-}
-
-[name=laatste] {
-    background-color: #00c66d;
-    color: #ffffff;
-    border-radius: 1em;
-    padding: .6em;
-    margin: .1em;
-    width: 5.8em;
-    text-align: center;
-    /* display: inline; */
-}
-
-[name=laatste]:hover {
-    background-color: #333399;
-}
-
-.activeRadio {
-    background-color: #333399;
-}
-
+/* laatste section */
 section:last-child {
     background-color: #ffffff;
 }
 
+/* footer */
 footer {
     background-color: #f6f6f6;
     padding: 1em;
     padding-right: 3em;
     display: flex;
     justify-content: flex-end;
+    margin-bottom: -50em;
 }
 
 #balk {
     position: relative;
-    bottom: -6em;
+    bottom: -10.5em;
 }
 
-.openKlappen {
-    transition: 0.5s;
-    overflow: hidden;
-    height: 0;
-}
 
-.active {
-    height: 16em;
-}
-
-.dun {
-    transform: rotateZ(-270deg);
-    color: black;
-    position: relative;
-    top: 4em;
-    right: 5em;
-    font-size: 5em;
-}
-
+/* animatie */
+/* hartje */
 .beat {
     animation: beat 1s;
     /*animation-iteration-count: 2;*/
@@ -328,7 +367,7 @@ footer {
     }
 }
 
-/* Dit is de animatie op het progress balkje. DevTips op Youtube heeft mij hierbij geholpen met het filmpje: Animating the Moments — Using Animation in UX CSS Animations Series Part 3*/
+/* Dit is de animatie op het download progress balkje. DevTips op Youtube heeft mij hierbij geholpen met het filmpje: Animating the Moments — Using Animation in UX CSS Animations Series Part 3*/
 
 .progress-bar {
     width: 100%;
@@ -364,13 +403,14 @@ footer {
     }
 }
 
+/* interactie verhaal */
 .rechts,
 .links {
     height: 4em;
     overflow: hidden;
     position: relative;
-    margin-left: 30em;
-    margin-right: 30em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .rechts p,
@@ -382,10 +422,15 @@ footer {
     line-height: 2em;
     text-align: left;
     font-size: 2em;
-
+    display: block;
+}
     /* Apply animation to this element */
-    animation: rechts 8s linear;
+.rechts p {
+        animation: rechts 8s linear;
+}
+.links p {
     animation: links 8s linear;
+    text-align: right;
 }
 
 /* Move it (define the animation) */
@@ -408,12 +453,8 @@ footer {
     }
 }
 
-section:first-child {
-    padding: 2em;
-}
 
 /*minor breakpoint*/
-
 @media (max-width: 40em) {
     section:nth-of-type(1),
     section:nth-of-type(2) {
@@ -457,6 +498,7 @@ section:first-child {
 }
 }
 
+
 /*major breakpoint 1*/
 
 @media (min-width: 40em) {
@@ -464,10 +506,6 @@ section:first-child {
     section:nth-of-type(2) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-    section article:first-child {
-        grid-column-start: 1;
-        grid-column-end: 3;
     }
     div section:nth-of-type(1) {
         width: 50%;
@@ -497,6 +535,32 @@ section:first-child {
     [type=search] {
         width: 63%;
     }
+    .rechts, .links {
+    height: 4em;
+    overflow: hidden;
+    position: relative;
+    margin-left: 15em;
+    margin-right: 5em;
+}
+
+    .rechts p, .links p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 2em;
+    text-align: left;
+    font-size: 2em;
+    display: block;
+}
+    .dun {
+    transform: rotateZ(-270deg);
+    color: black;
+    position: relative;
+    top: 4em;
+    right: 4em;
+    font-size: 4em;
+}
 }
 
     /*major breakpoint 2*/
@@ -504,10 +568,6 @@ section:first-child {
         section:nth-of-type(1),
         section:nth-of-type(2) {
             grid-template-columns: 1fr 1fr 1fr;
-        }
-        section article:first-child {
-            grid-column-start: 1;
-            grid-column-end: 3;
         }
         h2 {
             grid-column: span 3;
@@ -529,6 +589,34 @@ section:first-child {
         [type=search] {
             width: 78%;
         }
+        .rechts,
+.links {
+    height: 4em;
+    overflow: hidden;
+    position: relative;
+    margin-left: 30em;
+    margin-right: 30em;
+}
+
+.rechts p,
+.links p {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 2em;
+    text-align: left;
+    font-size: 2em;
+    display: block;
+}
+        .dun {
+    transform: rotateZ(-270deg);
+    color: black;
+    position: relative;
+    top: 4em;
+    right: 5em;
+    font-size: 5em;
+}
     }
 
     section:first-child {
