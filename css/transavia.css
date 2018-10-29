@@ -8,6 +8,7 @@ body {
 
 
 /* achtergronden pagina's*/
+
 #achtergrond {
     background-image: url(../img/Achtergrond.foto.jpg);
     background-repeat: no-repeat;
@@ -30,6 +31,7 @@ body {
 
 
 /*header informatie*/
+
 #ruimte {
     padding: 2em;
 }
@@ -62,7 +64,8 @@ header img {
     padding-left: 1em;
 }
 
-body > header > nav > ul > li:first-child > a > img, body > footer > img {
+body > header > nav > ul > li:first-child > a > img,
+body > footer > img {
     width: 13em;
     height: 2.4em;
 }
@@ -87,6 +90,7 @@ body header nav ul li img {
 
 
 /* kopjes */
+
 h1 {
     color: #00D66C;
     text-align: center;
@@ -127,6 +131,7 @@ h3 {
 
 
 /* eerste section */
+
 section:first-of-type {
     border-radius: 1em;
 }
@@ -137,6 +142,7 @@ section:first-child {
 
 
 /* form */
+
 fieldset {
     border: none;
     background: white;
@@ -187,7 +193,8 @@ button {
     font-family: "Nexa Light";
 }
 
-body > main > div > section > form > div > fieldset:first-child > label, body > main > div > section > form > div > fieldset:first-child > input[type="submit"] {
+body > main > div > section > form > div > fieldset:first-child > label,
+body > main > div > section > form > div > fieldset:first-child > input[type="submit"] {
     margin: 0em .4em 0em 0em;
     display: inline;
 }
@@ -258,6 +265,7 @@ body > main > div > section > form > div > fieldset:first-child > label, body > 
 
 
 /* link */
+
 a {
     color: #00D66C;
     text-decoration: none;
@@ -293,11 +301,13 @@ section article a {
 
 body > main > section:nth-child(2) > article:nth-child(3) > a {
     text-align: left;
-    display: block; /* voor mobiel */
+    display: block;
+    /* voor mobiel */
 }
 
 
 /* articles */
+
 article {
     border: none;
     border-color: #909090;
@@ -331,11 +341,13 @@ section article img:first-child {
 
 
 /* laatste section */
+
 section:last-child {
     background-color: #ffffff;
 }
 
 /* footer */
+
 footer {
     background-color: #f6f6f6;
     padding: 1em;
@@ -352,7 +364,9 @@ footer {
 
 
 /* animatie */
+
 /* hartje */
+
 .beat {
     animation: beat 1s;
     /*animation-iteration-count: 2;*/
@@ -367,7 +381,7 @@ footer {
     }
 }
 
-/* Dit is de animatie op het download progress balkje. DevTips op Youtube heeft mij hierbij geholpen met het filmpje: Animating the Moments — Using Animation in UX CSS Animations Series Part 3*/
+/* progress balk. Credit DevTips op Youtube: Animating the Moments — Using Animation in UX CSS Animations Series Part 3*/
 
 .progress-bar {
     width: 100%;
@@ -404,6 +418,7 @@ footer {
 }
 
 /* interactie verhaal */
+
 .rechts,
 .links {
     height: 4em;
@@ -424,10 +439,13 @@ footer {
     font-size: 2em;
     display: block;
 }
-    /* Apply animation to this element */
+
+/* Apply animation to this element */
+
 .rechts p {
-        animation: rechts 8s linear;
+    animation: rechts 8s linear;
 }
+
 .links p {
     animation: links 8s linear;
     text-align: right;
@@ -455,6 +473,7 @@ footer {
 
 
 /*minor breakpoint*/
+
 @media (max-width: 40em) {
     section:nth-of-type(1),
     section:nth-of-type(2) {
@@ -468,7 +487,8 @@ footer {
     article {
         justify-self: center;
     }
-    body > header > nav > ul > li:nth-child(1) > a > img, body > footer > img {
+    body > header > nav > ul > li:nth-child(1) > a > img,
+    body > footer > img {
         width: 9em;
         margin: 0;
         height: 1.8em;
@@ -491,11 +511,11 @@ footer {
         width: 2em;
     }
     .active {
-    height: 16em;
-}
+        height: 16em;
+    }
     section:first-child {
         padding: 1em;
-}
+    }
 }
 
 
@@ -535,94 +555,101 @@ footer {
     [type=search] {
         width: 63%;
     }
-    .rechts, .links {
-    height: 4em;
-    overflow: hidden;
-    position: relative;
-    margin-left: 15em;
-    margin-right: 5em;
-}
+    .rechts,
+    .links {
+        height: 4em;
+        overflow: hidden;
+        position: relative;
+        margin-left: 15em;
+        margin-right: 5em;
+    }
 
-    .rechts p, .links p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 2em;
-    text-align: left;
-    font-size: 2em;
-    display: block;
-}
+    .rechts p,
+    .links p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 2em;
+        text-align: left;
+        font-size: 2em;
+        display: block;
+    }
     .dun {
-    transform: rotateZ(-270deg);
-    color: black;
-    position: relative;
-    top: 4em;
-    right: 4em;
-    font-size: 4em;
-}
-}
-
-    /*major breakpoint 2*/
-    @media (min-width: 70em) {
-        section:nth-of-type(1),
-        section:nth-of-type(2) {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        h2 {
-            grid-column: span 3;
-        }
-        h1 {
-            font-size: 2em;
-        }
-        legend,
-        label {
-            font-size: 1.2em;
-        }
-        a,
-        [type=submit] {
-            font-size: 1.1em;
-        }
-        .zoeken {
-            margin: 0em .2em 0em 0em;
-        }
-        [type=search] {
-            width: 78%;
-        }
-        .rechts,
-.links {
-    height: 4em;
-    overflow: hidden;
-    position: relative;
-    margin-left: 30em;
-    margin-right: 30em;
+        transform: rotateZ(-270deg);
+        color: black;
+        position: relative;
+        top: 4em;
+        right: 4em;
+        font-size: 4em;
+    }
+    #balk {
+        position: relative;
+        bottom: -28em;
+    }
 }
 
-.rechts p,
-.links p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 2em;
-    text-align: left;
-    font-size: 2em;
-    display: block;
-}
-        .dun {
-    transform: rotateZ(-270deg);
-    color: black;
-    position: relative;
-    top: 4em;
-    right: 5em;
-    font-size: 5em;
-}
+/*major breakpoint 2*/
+
+@media (min-width: 70em) {
+    section:nth-of-type(1),
+    section:nth-of-type(2) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    h2 {
+        grid-column: span 3;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    legend,
+    label {
+        font-size: 1.2em;
+    }
+    a,
+    [type=submit] {
+        font-size: 1.1em;
+    }
+    .zoeken {
+        margin: 0em .2em 0em 0em;
+    }
+    [type=search] {
+        width: 78%;
+    }
+    .rechts,
+    .links {
+        height: 4em;
+        overflow: hidden;
+        position: relative;
+        margin-left: 30em;
+        margin-right: 30em;
     }
 
-    section:first-child {
-        border-radius: 1em;
-        background: white;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 1fr;
+    .rechts p,
+    .links p {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 2em;
+        text-align: left;
+        font-size: 2em;
+        display: block;
     }
+    .dun {
+        transform: rotateZ(-270deg);
+        color: black;
+        position: relative;
+        top: 4em;
+        right: 5em;
+        font-size: 5em;
+    }
+}
+
+section:first-child {
+    border-radius: 1em;
+    background: white;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
