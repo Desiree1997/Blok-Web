@@ -516,6 +516,13 @@ footer {
     section:first-child {
         padding: 1em;
     }
+    #ruimte > section {
+        width: 15em;
+    }
+    #balk {
+    position: relative;
+    bottom: 0em;
+}
 }
 
 
@@ -585,7 +592,7 @@ footer {
     }
     #balk {
         position: relative;
-        bottom: -28em;
+        bottom: -32em;
     }
 }
 
