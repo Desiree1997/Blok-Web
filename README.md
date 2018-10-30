@@ -3,6 +3,7 @@ Cmd-blok-web
 
 User goal 1. Verhalen tijdens de reis kunnen lezen: alle verhalen moeten offline te lezen zijn. 
 Dit is gedaan door de verhalen te kunnen downloaden.  Als je op de downloaden knop klikt wordt er met JavaScript een stuk CSS aangestuurd die een progress balkje onder de afbeelding laat zien. Vervolgens wordt de downloaden knop een vinkje en komt er bovenin in de header bij het downloaden icon een 1tje te staan, om te laten zien dat er een is toegevoegd.  
+Voor het hartje en downloaden is er een loop aangemaakt zodat hij alle knoppen pakt ipv 1. Deze loop gaat langs alle knoppen en daarom kan je op alle knoppen klikken om het gewenste resultaat te krijgen.
 
 User goal 2. Gebruiker moet een leuk verhaal kunnen vinden. Leuk is per persoon verschillend. Daarom kan de gebruiker gericht zoeken, filteren, sorteren. 
 De gebruiker kan filteren op thema en kleur. Ook kan de gebruiker gericht zoeken en sorteren op populariteit, waardering, leestijd, reacties en random. Bij thema’s staat er achter elk thema hoeveel resultaten je te zien krijgt als je daarop filtert. Dit aantal wordt opgeteld als je meer thema’s kiest en weergeven in de toepassen/ toon resultaten knop. 
